@@ -34,9 +34,6 @@
       integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"></script>
-    <!--Swiper-->
-    <link rel="stylesheet" href="swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
     <!--Icons-->
     <script
       src="https://kit.fontawesome.com/46158df03c.js"
@@ -180,29 +177,9 @@
             </a>
           </div>
         </div>
-        <swiper-container
-          class="hero-img"
-          pagination="true"
-          pagination-clickable="true"
-          navigation="true"
-          space-between="60"
-          loop="true"
-          centered-slides="true"
-          autoplay-delay="3000"
-          autoplay-disable-on-interaction="false">
-          <swiper-slide class="hero-img-slide">
-            <img src="hero-img1.jpg" alt="" />
-          </swiper-slide>
-          <swiper-slide class="hero-img-slide">
-            <img src="hero-img2.jpg" alt="" />
-          </swiper-slide >
-          <swiper-slide class="hero-img-slide">
-            <img src="hero-img3.jpg" alt="" />
-          </swiper-slide>
-          <swiper-slide class="hero-img-slide">
-            <img src="hero-img4.jpg" alt="" />
-          </swiper-slide>
-        </swiper-container>
+        <div class="hero-img">
+          <img src="hero-img4.jpg" alt="placeholder" />
+        </div>
       </section>
     </header>
     <main>
@@ -218,8 +195,7 @@
           </div>
           <h2>And what we aim to achieve</h2>
           <p>
-            SOS Children's Village has always aimed to provide quality free
-            education for the less priviledged. <br /><br />
+            SOS Children's Village has always aimed to provide quality free education for the less priviledged. <br><br>
             Learn more on the main website:
             <a href="https://www.sos-childrensvillages.org" target="_blank"
               ><i class="fa-solid fa-globe"></i>
@@ -232,18 +208,13 @@
       <!--Services-->
 
       <section class="services">
+        <div class="circle"></div>
+        <div class="circle2"></div>
         <div class="services-header">
           <h1>Our Services</h1>
         </div>
-        <swiper-container
-          class="services-items"
-          navigation="true"
-          space-between="32"
-          slides-per-view="2"
-          free-mode="true"
-          scrollbar-hide="true">
-
-          <swiper-slide class="item">
+        <div class="services-items">
+          <div class="item">
             <img src="cafeteria.jpeg" alt="placeholder" />
             <div class="item-text">
               <h2>CANTEEN</h2>
@@ -252,63 +223,30 @@
                 Assumenda quaerat tenetur placeat repellendus aliquid velit.
               </p>
             </div>
-          </swiper-slide>
-
-          <swiper-slide class="item">
-            <img src="water.jpeg" alt="placeholder" />
+          </div>
+          <div class="item">
+            <img src="sciencelab.jpeg" alt="placeholder" />
             <div class="item-text">
-              <h2>CLEAN WATER</h2>
+              <h2>SCIENCE LAB</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Assumenda quaerat tenetur placeat repellendus aliquid velit.
               </p>
             </div>
-          </swiper-slide>
-
-          <swiper-slide class="item">
-            <img src="library.jpeg" alt="placeholder" />
+          </div>
+          <div class="item">
+            <img src="computinglab.jpeg" alt="placeholder" />
             <div class="item-text">
-              <h2>LIBRARY</h2>
+              <h2>COMPUTING LAB</h2>
               <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 Assumenda quaerat tenetur placeat repellendus aliquid velit.
               </p>
             </div>
-          </swiper-slide>
+          </div>
+        </div>
+      </section>
 
-          <swiper-slide class="item">
-            <img src="stationary.jpeg" alt="placeholder" />
-            <div class="item-text">
-              <h2>STATIONARY</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda quaerat tenetur placeat repellendus aliquid velit.
-              </p>
-            </div>
-          </swiper-slide>
-
-          <swiper-slide class="item">
-            <img src="teaching.jpeg" alt="placeholder" />
-            <div class="item-text">
-              <h2>TEACHING</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda quaerat tenetur placeat repellendus aliquid velit.
-              </p>
-            </div>
-          </swiper-slide>
-
-          <swiper-slide class="item">
-            <img src="clubs.jpeg" alt="placeholder" />
-            <div class="item-text">
-              <h2>EXTRACURRICULARS</h2>
-              <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Assumenda quaerat tenetur placeat repellendus aliquid velit.
-              </p>
-            </div>
-          </swiper-slide>
-        </swiper-container>
       <!--Campuses-->
 
       <section class="campuses">
@@ -316,9 +254,12 @@
           <h1>Our Campuses</h1>
         </div>
         <div class="campuses-items">
-          <div class="item"></div>
-          <div class="item"></div>
-          <div class="item"></div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
+          <div class="item">
+          </div>
         </div>
       </section>
 
@@ -402,7 +343,6 @@
     </footer>
 
     <script>
-      // hamburger menu
       let hbIcon = document.getElementById("hbIcon");
       let hbMenu = document.getElementById("hbMenu");
       hbIcon.addEventListener("click", showMenu);
@@ -413,13 +353,6 @@
       function hideMenu() {
         hbMenu.classList.remove("active");
       }
-
-      // const swiper = new Swiper('.swiper', {
-      //   autoplay: {
-      //     delay: 300,
-      //   },
-      // });
-
     </script>
   </body>
 </html>
